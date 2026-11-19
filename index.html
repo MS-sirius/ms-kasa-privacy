@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MS-Kasa Gizlilik Politikası</title>
+<style>
+  body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; line-height: 1.6; color: #1d1d1f; background: #fff; }
+  h1 { font-size: 1.6rem; margin-bottom: .2rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  .muted { color: #666; font-size: .9rem; }
+  hr { border: 0; border-top: 1px solid #ddd; margin: 2.5rem 0; }
+  @media (prefers-color-scheme: dark) { body { background: #121212; color: #e6e6e6; } .muted { color: #9a9a9a; } hr { border-top-color: #333; } }
+</style>
+</head>
+<body>
+
+<h1>MS-Kasa Gizlilik Politikası</h1>
+<p class="muted">Son güncelleme: 19 Kasım 2026</p>
+
+<p>MS-Kasa, verilerinizi yalnızca cihazınızda şifreli olarak saklayan çevrimdışı bir şifre kasasıdır. Bu politika, uygulamanın hangi verileri nasıl işlediğini açıklar.</p>
+
+<h2>Toplanan veriler</h2>
+<p><strong>Hiçbir kişisel veri toplanmaz, paylaşılmaz veya bir sunucuya gönderilmez.</strong> Uygulamanın internet erişim izni (<code>INTERNET</code>) yoktur; bu nedenle cihazınızdan dışarıya veri iletmesi teknik olarak mümkün değildir. Uygulamada reklam, analiz, çökme raporlama veya üçüncü taraf takip aracı bulunmaz.</p>
+
+<h2>Cihazda saklanan veriler</h2>
+<ul>
+  <li>Kasaya girdiğiniz kayıtlar (şifreler, notlar, kart bilgileri vb.) yalnızca cihazınızda, uygulamanın özel depolama alanında tutulur.</li>
+  <li>Veriler, ana şifrenizden Argon2id ile türetilen anahtar ve AES-256-GCM ile şifrelenir; ayrıca Android Keystore donanım anahtarıyla cihaza bağlanır.</li>
+  <li>Ana şifreniz hiçbir yerde saklanmaz. Unutulması durumunda verileri kurtarmak mümkün değildir.</li>
+  <li>Android bulut yedeği ve sistemin otomatik cihazdan cihaza aktarımı bilinçli olarak kapatılmıştır.</li>
+  <li>İsterseniz kayıtlarınızı, kendi belirlediğiniz transfer şifresiyle (Argon2id + AES-256-GCM) şifrelenmiş bir dosyaya aktarabilirsiniz. Dosyanın nereye kaydedileceğini veya gönderileceğini yalnızca siz seçersiniz; geliştiriciye hiçbir şey iletilmez.</li>
+</ul>
+
+<h2>İzinler</h2>
+<ul>
+  <li><strong>Biyometri (<code>USE_BIOMETRIC</code>):</strong> İsteğe bağlı olarak kasayı parmak izi veya yüz tanıma ile açmak için kullanılır. Biyometrik verileriniz uygulamaya hiçbir zaman ulaşmaz; doğrulama Android sistemi tarafından yapılır.</li>
+</ul>
+
+<h2>Verilerin silinmesi</h2>
+<p>Tüm verileri uygulamadaki <em>Ayarlar → Kasayı tamamen sil</em> seçeneğiyle veya uygulamayı kaldırarak kalıcı olarak silebilirsiniz. Sunucuda veri tutulmadığı için başka bir silme talebine gerek yoktur.</p>
+
+<h2>Çocukların gizliliği</h2>
+<p>Uygulama hiçbir kullanıcıdan, çocuklar dahil, veri toplamaz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika değişirse güncel hali bu sayfada yayımlanır ve yukarıdaki tarih güncellenir.</p>
+
+<h2>İletişim</h2>
+<p>Sorularınız için: <a href="https://github.com/MS-sirius/ms-kasa-privacy/issues">github.com/MS-sirius/ms-kasa-privacy/issues</a></p>
+
+<hr>
+
+<h1>MS-Kasa Privacy Policy</h1>
+<p class="muted">Last updated: November 19, 2026</p>
+
+<p>MS-Kasa is an offline password vault that stores your data only on your device, encrypted.</p>
+
+<h2>Data collection</h2>
+<p><strong>No personal data is collected, shared, or sent to any server.</strong> The app does not request the <code>INTERNET</code> permission, so it cannot transmit data off your device. It contains no ads, analytics, crash reporting, or third-party trackers.</p>
+
+<h2>Data stored on your device</h2>
+<p>Vault entries are stored only in the app's private storage, encrypted with AES-256-GCM using a key derived from your master password (Argon2id) and bound to the device via Android Keystore. Your master password is never stored. Android cloud backup and automatic device-to-device transfer are disabled.</p>
+<p>If you choose, you can export your entries to a file encrypted with a transfer password you set (Argon2id + AES-256-GCM). Only you decide where that file is saved or sent; nothing is ever transmitted to the developer.</p>
+
+<h2>Permissions</h2>
+<p><strong>USE_BIOMETRIC</strong> is used only to optionally unlock the vault with fingerprint or face. Biometric data never reaches the app; verification is handled by Android.</p>
+
+<h2>Deleting data</h2>
+<p>Use <em>Settings → Delete vault completely</em> in the app, or uninstall the app. No data is held on any server.</p>
+
+<h2>Contact</h2>
+<p><a href="https://github.com/MS-sirius/ms-kasa-privacy/issues">github.com/MS-sirius/ms-kasa-privacy/issues</a></p>
+
+<p class="muted">© 2026 MS-sirius. Tüm hakları saklıdır.</p>
+</body>
+</html>
