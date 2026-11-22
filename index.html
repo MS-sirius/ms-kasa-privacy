@@ -26,10 +26,10 @@
 <h2>Cihazda saklanan veriler</h2>
 <ul>
   <li>Kasaya girdiğiniz kayıtlar (şifreler, notlar, kart bilgileri vb.) yalnızca cihazınızda, uygulamanın özel depolama alanında tutulur.</li>
-  <li>Veriler, ana şifrenizden Argon2id ile türetilen anahtar ve AES-256-GCM ile şifrelenir; ayrıca Android Keystore donanım anahtarıyla cihaza bağlanır.</li>
+  <li>Veriler, yalnızca ana şifrenizle açılabilen güçlü şifrelemeyle korunur ve cihazınıza bağlanır; başka bir cihazda açılamaz.</li>
   <li>Ana şifreniz hiçbir yerde saklanmaz. Unutulması durumunda verileri kurtarmak mümkün değildir.</li>
   <li>Android bulut yedeği ve sistemin otomatik cihazdan cihaza aktarımı bilinçli olarak kapatılmıştır.</li>
-  <li>İsterseniz kayıtlarınızı, kendi belirlediğiniz transfer şifresiyle (Argon2id + AES-256-GCM) şifrelenmiş bir dosyaya aktarabilirsiniz. Dosyanın nereye kaydedileceğini veya gönderileceğini yalnızca siz seçersiniz; geliştiriciye hiçbir şey iletilmez.</li>
+  <li>İsterseniz kayıtlarınızı, kendi belirlediğiniz transfer şifresiyle şifrelenmiş bir dosyaya aktarabilirsiniz. Dosyanın nereye kaydedileceğini veya gönderileceğini yalnızca siz seçersiniz; geliştiriciye hiçbir şey iletilmez.</li>
   <li>Dışa aktarma özelliği tek seferlik bir uygulama içi satın alma ile açılır. Ödeme tamamen Google Play tarafından işlenir; uygulama yalnızca cihazdaki Play Store uygulamasından satın alma durumunu (açık/kapalı) öğrenir. Ödeme veya kart bilgileriniz uygulamaya ya da geliştiriciye ulaşmaz.</li>
 </ul>
 
@@ -62,8 +62,8 @@
 <p><strong>No personal data is collected, shared, or sent to any server.</strong> The app does not request the <code>INTERNET</code> permission, so it cannot transmit data off your device. It contains no ads, analytics, crash reporting, or third-party trackers.</p>
 
 <h2>Data stored on your device</h2>
-<p>Vault entries are stored only in the app's private storage, encrypted with AES-256-GCM using a key derived from your master password (Argon2id) and bound to the device via Android Keystore. Your master password is never stored. Android cloud backup and automatic device-to-device transfer are disabled.</p>
-<p>If you choose, you can export your entries to a file encrypted with a transfer password you set (Argon2id + AES-256-GCM). Only you decide where that file is saved or sent; nothing is ever transmitted to the developer.</p>
+<p>Vault entries are stored only in the app's private storage, protected with strong encryption that only your master password can unlock, and bound to your device. Your master password is never stored. Android cloud backup and automatic device-to-device transfer are disabled.</p>
+<p>If you choose, you can export your entries to a file encrypted with a transfer password you set. Only you decide where that file is saved or sent; nothing is ever transmitted to the developer.</p>
 <p>Export is unlocked with a one-time in-app purchase. Payment is processed entirely by Google Play; the app only learns the purchase status (unlocked or not) from the Play Store app on your device. Your payment details never reach the app or the developer.</p>
 
 <h2>Permissions</h2>
