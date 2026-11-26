@@ -16,12 +16,23 @@
 <body>
 
 <h1>MS-Kasa Gizlilik Politikası</h1>
-<p class="muted">Son güncelleme: 19 Kasım 2026 (sürüm 1.3.0)</p>
+<p class="muted">Son güncelleme: 26 Kasım 2026 (sürüm 1.6.0)</p>
 
-<p>MS-Kasa, verilerinizi yalnızca cihazınızda şifreli olarak saklayan çevrimdışı bir şifre kasasıdır. Bu politika, uygulamanın hangi verileri nasıl işlediğini açıklar.</p>
+<p>MS-Kasa, kayıtlarınızı yalnızca cihazınızda şifreli olarak saklayan bir şifre kasasıdır. Bu politika, uygulamanın hangi verileri nasıl işlediğini açıklar.</p>
 
-<h2>Toplanan veriler</h2>
-<p><strong>Hiçbir kişisel veri toplanmaz, paylaşılmaz veya bir sunucuya gönderilmez.</strong> Uygulamanın internet erişim izni (<code>INTERNET</code>) yoktur; bu nedenle cihazınızdan dışarıya veri iletmesi teknik olarak mümkün değildir. Uygulamada reklam, analiz, çökme raporlama veya üçüncü taraf takip aracı bulunmaz.</p>
+<h2>Kasanızdaki kayıtlar</h2>
+<p><strong>Kasanızdaki kayıtlar yalnızca cihazınızda, şifreli olarak durur ve hiçbir sunucuya gönderilmez.</strong> Ne geliştirici ne de herhangi bir hizmet sağlayıcı kayıtlarınızı görebilir. Uygulamada analiz, çökme raporlama veya kullanıcı takibi yoktur.</p>
+
+<h2>Reklamlar</h2>
+<ul>
+  <li>Uygulama, açılışta (kasa kilidi açılmadan önce) bir reklam gösterebilir. Bunun için internete bağlanır ve geliştiricinin reklam ayarlarını alır. Bu bağlantıda kasanızdaki hiçbir bilgi gönderilmez.</li>
+  <li>Reklam ya geliştiricinin kendi tanıtımıdır ya da Google'ın reklam hizmetiyle gösterilir. Kendi tanıtımlarımızda reklam kimliği veya kişisel veri kullanılmaz; yalnızca isimsiz, günlük gösterim ve tıklama sayısı tutulur.</li>
+  <li>Google'ın reklam hizmeti; reklam göstermek, ölçmek ve kötüye kullanımı önlemek için cihazınızın reklam kimliğini ve genel cihaz bilgilerini (ör. cihaz türü, dil, IP adresinden yaklaşık konum) işleyebilir. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de izniniz istenir; tercihinizi <em>Ayarlar → Reklamlar → Reklam tercihleri</em> bölümünden değiştirebilirsiniz. Reklam kimliğini telefonunuzun ayarlarından sıfırlayabilir veya silebilirsiniz.</li>
+  <li><strong>Reklamsız MS-Kasa</strong> (tek seferlik uygulama içi satın alma) alındığında reklam gösterilmez ve Google'ın reklam hizmeti hiç başlatılmaz.</li>
+</ul>
+
+<h2>Hizmet sağlayıcılar</h2>
+<p>Reklam ayarları ve kendi tanıtımlarımız Google'ın bulut hizmetlerinde (Avrupa Birliği) tutulur; reklamlar Google'ın reklam hizmetiyle gösterilebilir; satın almalar Google Play tarafından işlenir. Bu hizmetlere kasanızdaki hiçbir bilgi gönderilmez. Veriler aktarım sırasında şifrelenir.</p>
 
 <h2>Cihazda saklanan veriler</h2>
 <ul>
@@ -30,20 +41,22 @@
   <li>Ana şifreniz hiçbir yerde saklanmaz. Unutulması durumunda verileri kurtarmak mümkün değildir.</li>
   <li>Android bulut yedeği ve sistemin otomatik cihazdan cihaza aktarımı bilinçli olarak kapatılmıştır.</li>
   <li>İsterseniz kayıtlarınızı, kendi belirlediğiniz transfer şifresiyle şifrelenmiş bir dosyaya aktarabilirsiniz. Dosyanın nereye kaydedileceğini veya gönderileceğini yalnızca siz seçersiniz; geliştiriciye hiçbir şey iletilmez.</li>
-  <li>Dışa aktarma özelliği tek seferlik bir uygulama içi satın alma ile açılır. Ödeme tamamen Google Play tarafından işlenir; uygulama yalnızca cihazdaki Play Store uygulamasından satın alma durumunu (açık/kapalı) öğrenir. Ödeme veya kart bilgileriniz uygulamaya ya da geliştiriciye ulaşmaz.</li>
+  <li>Dışa aktarma ve Reklamsız MS-Kasa tek seferlik uygulama içi satın almalardır. Ödeme tamamen Google Play tarafından işlenir; uygulama yalnızca cihazdaki Play Store uygulamasından satın alma durumunu (açık/kapalı) öğrenir. Ödeme veya kart bilgileriniz uygulamaya ya da geliştiriciye ulaşmaz.</li>
 </ul>
 
 <h2>İzinler</h2>
 <ul>
-  <li><strong>Google Play faturalandırma (<code>com.android.vending.BILLING</code>):</strong> Yalnızca dışa aktarma kilidini satın almak ve satın alma durumunu kontrol etmek için, cihazdaki Play Store uygulamasıyla iletişimde kullanılır.</li>
-  <li><strong>Biyometri (<code>USE_BIOMETRIC</code>):</strong> İsteğe bağlı olarak kasayı parmak izi veya yüz tanıma ile açmak için kullanılır. Biyometrik verileriniz uygulamaya hiçbir zaman ulaşmaz; doğrulama Android sistemi tarafından yapılır.</li>
+  <li><strong>İnternet:</strong> Yalnızca açılış reklamı ve reklam ayarları için kullanılır; kasanızdaki kayıtlar internete hiç çıkmaz.</li>
+  <li><strong>Reklam kimliği:</strong> Yalnızca Google'ın reklam hizmeti tarafından, yukarıdaki "Reklamlar" bölümünde anlatıldığı gibi kullanılır. Reklamsız sürümde kullanılmaz.</li>
+  <li><strong>Google Play faturalandırma:</strong> Yalnızca uygulama içi satın almalar ve satın alma durumunu kontrol etmek için, cihazdaki Play Store uygulamasıyla iletişimde kullanılır.</li>
+  <li><strong>Biyometri:</strong> İsteğe bağlı olarak kasayı parmak izi veya yüz tanıma ile açmak için kullanılır. Biyometrik verileriniz uygulamaya hiçbir zaman ulaşmaz; doğrulama Android sistemi tarafından yapılır.</li>
 </ul>
 
 <h2>Verilerin silinmesi</h2>
-<p>Tüm verileri uygulamadaki <em>Ayarlar → Kasayı tamamen sil</em> seçeneğiyle veya uygulamayı kaldırarak kalıcı olarak silebilirsiniz. Sunucuda veri tutulmadığı için başka bir silme talebine gerek yoktur.</p>
+<p>Tüm verileri uygulamadaki <em>Ayarlar → Kasayı tamamen sil</em> seçeneğiyle veya uygulamayı kaldırarak kalıcı olarak silebilirsiniz. Kasanızdaki kayıtlar hiçbir sunucuda tutulmadığı için başka bir silme talebine gerek yoktur. Reklam gösterim sayıları isimsizdir ve size bağlanamaz.</p>
 
 <h2>Çocukların gizliliği</h2>
-<p>Uygulama hiçbir kullanıcıdan, çocuklar dahil, veri toplamaz.</p>
+<p>Uygulama çocuklara yönelik değildir. Kasa kayıtları hiçbir kullanıcıdan toplanmaz; reklamlar yukarıda anlatıldığı gibi gösterilir.</p>
 
 <h2>Değişiklikler</h2>
 <p>Bu politika değişirse güncel hali bu sayfada yayımlanır ve yukarıdaki tarih güncellenir.</p>
@@ -54,24 +67,35 @@
 <hr>
 
 <h1>MS-Kasa Privacy Policy</h1>
-<p class="muted">Last updated: November 19, 2026 (version 1.3.0)</p>
+<p class="muted">Last updated: November 26, 2026 (version 1.6.0)</p>
 
-<p>MS-Kasa is an offline password vault that stores your data only on your device, encrypted.</p>
+<p>MS-Kasa is a password vault that stores your entries only on your device, encrypted.</p>
 
-<h2>Data collection</h2>
-<p><strong>No personal data is collected, shared, or sent to any server.</strong> The app does not request the <code>INTERNET</code> permission, so it cannot transmit data off your device. It contains no ads, analytics, crash reporting, or third-party trackers.</p>
+<h2>Your vault entries</h2>
+<p><strong>Your vault entries stay only on your device, encrypted, and are never sent to any server.</strong> Neither the developer nor any service provider can see them. The app has no analytics, crash reporting, or user tracking.</p>
+
+<h2>Ads</h2>
+<p>The app may show an ad at launch, before the vault is unlocked. To do so it connects to the internet and fetches the developer's ad settings; nothing from your vault is sent.</p>
+<p>The ad is either the developer's own promotion or is shown through Google's advertising service. Our own promotions use no advertising ID or personal data; only anonymous daily view and tap counts are kept.</p>
+<p>Google's advertising service may process your device's advertising ID and general device information (e.g. device type, language, approximate location from IP address) to show and measure ads and prevent abuse. In the European Economic Area, the UK and Switzerland your consent is requested; you can change it under <em>Settings → Ads → Ad preferences</em>. You can reset or delete the advertising ID in your phone's settings.</p>
+<p>With <strong>Ad-free MS-Kasa</strong> (one-time in-app purchase) no ads are shown and Google's advertising service is never started.</p>
+
+<h2>Service providers</h2>
+<p>Ad settings and our own promotions are stored on Google's cloud services (European Union); ads may be shown through Google's advertising service; purchases are processed by Google Play. Nothing from your vault is sent to these services. Data is encrypted in transit.</p>
 
 <h2>Data stored on your device</h2>
 <p>Vault entries are stored only in the app's private storage, protected with strong encryption that only your master password can unlock, and bound to your device. Your master password is never stored. Android cloud backup and automatic device-to-device transfer are disabled.</p>
 <p>If you choose, you can export your entries to a file encrypted with a transfer password you set. Only you decide where that file is saved or sent; nothing is ever transmitted to the developer.</p>
-<p>Export is unlocked with a one-time in-app purchase. Payment is processed entirely by Google Play; the app only learns the purchase status (unlocked or not) from the Play Store app on your device. Your payment details never reach the app or the developer.</p>
+<p>Export and Ad-free MS-Kasa are one-time in-app purchases. Payment is processed entirely by Google Play; the app only learns the purchase status (unlocked or not) from the Play Store app on your device. Your payment details never reach the app or the developer.</p>
 
 <h2>Permissions</h2>
-<p><strong>com.android.vending.BILLING</strong> is used only to buy the export unlock and check its status with the Play Store app on your device.</p>
-<p><strong>USE_BIOMETRIC</strong> is used only to optionally unlock the vault with fingerprint or face. Biometric data never reaches the app; verification is handled by Android.</p>
+<p><strong>Internet</strong> is used only for the launch ad and its settings; your vault entries never go online.</p>
+<p><strong>Advertising ID</strong> is used only by Google's advertising service as described under "Ads"; not in the ad-free version.</p>
+<p><strong>Google Play billing</strong> is used only for in-app purchases and to check their status with the Play Store app on your device.</p>
+<p><strong>Biometrics</strong> are used only to optionally unlock the vault with fingerprint or face. Biometric data never reaches the app; verification is handled by Android.</p>
 
 <h2>Deleting data</h2>
-<p>Use <em>Settings → Delete vault completely</em> in the app, or uninstall the app. No data is held on any server.</p>
+<p>Use <em>Settings → Delete vault completely</em> in the app, or uninstall the app. Your vault entries are not held on any server. Ad view counts are anonymous and cannot be linked to you.</p>
 
 <h2>Contact</h2>
 <p><a href="https://github.com/MS-sirius/ms-kasa-privacy/issues">github.com/MS-sirius/ms-kasa-privacy/issues</a></p>
